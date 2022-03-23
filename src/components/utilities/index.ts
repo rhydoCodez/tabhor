@@ -1,0 +1,5 @@
+export { default as Login } from "./Login"
+export { default as CheckOut } from "./CheckOut"
+export { default as DepartmentCard } from "./DepartmentCard"
+export { default as HowCard } from "./HowCard"
+export { default as WhatsappWidget } from "./WhatsappWidget"

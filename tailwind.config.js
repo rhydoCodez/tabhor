@@ -4,7 +4,19 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-bg": "url('/assets/eight.jpg')",
+        "dept-bg": "url('/assets/one.jpg')",
+      },
+
+      // font Family
+      fontFamily: {
+        hurricane: ["Hurricane", "cursive"],
+        openSans: ["Open Sans", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+      },
+    },
   },
-  plugins: [],
-};
+  plugins: [require("@tailwindcss/forms")],
+}

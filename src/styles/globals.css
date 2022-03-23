@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ----------- styles ------------ */
+.hero {
+  @apply relative w-full h-screen p-10;
+}
+
+.hero::before {
+  @apply content-[""] bg-hero-bg absolute bg-blend-overlay bg-cover inset-x-0 top-0 bottom-0 opacity-50;
+}
+
+.dept {
+  @apply relative;
+}
+
+.dept::before {
+  @apply content-[""] bg-dept-bg absolute bg-blend-overlay bg-cover inset-x-0 inset-y-0 opacity-50;
+}

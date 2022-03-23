@@ -1,11 +1,11 @@
-import HowCard from "./utilities/HowCard";
+import HowCard from "./utilities/HowCard"
 
 const HowItWorks = () => {
   return (
-    <section>
+    <section className="p-6 bg-gray-100">
       <HowCard />
     </section>
-  );
-};
+  )
+}
 
-export default HowItWorks;
+export default HowItWorks

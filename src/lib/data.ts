@@ -1,13 +1,16 @@
-import { IconType } from "react-icons";
-import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
-import { RiMoneyDollarCircleLine } from "react-icons/ri";
-import { GrCloudDownload } from "react-icons/gr";
+import { IconType } from "react-icons"
+import {
+  AiOutlineSearch,
+  AiOutlineShoppingCart,
+  AiOutlineCloudDownload,
+} from "react-icons/ai"
+import { RiMoneyDollarCircleLine } from "react-icons/ri"
 
 export interface IProjectMaterialData {
-  department: string;
-  fullContent: string;
-  topic: string;
-  preview: string;
+  department: string
+  fullContent: string
+  topic: string
+  preview: string
 }
 
 export const projectMaterialData: IProjectMaterialData[] = [
@@ -17,14 +20,14 @@ export const projectMaterialData: IProjectMaterialData[] = [
     topic: "",
     preview: "",
   },
-];
+]
 
 // ---------------- How it Works --------------------
 
 export interface IHowItWorks {
-  Icon: IconType;
-  title: string;
-  content: string;
+  Icon: IconType
+  title: string
+  content: string
 }
 
 export const HowItWorksData: IHowItWorks[] = [
@@ -46,23 +49,95 @@ export const HowItWorksData: IHowItWorks[] = [
     content: "pay Service Charge for the Project using the Payment Method.",
   },
   {
-    Icon: GrCloudDownload,
+    Icon: AiOutlineCloudDownload,
     title: "Download Project",
     content:
       'Click on the "Download Now" button to download the project material along with the accompanying freebies.',
   },
-];
+]
 
 // --------------- departments -----------------
 
-export const departments: string[] = [
-  "Public Administration",
-  "Accounting",
-  "Business Administration & Management",
-  "Mass Communication",
-  "Computer Science & Engineering",
-  "Marketing",
-  "Banking & Finance",
-  "Mathematics & Statistics",
-  "Education",
-];
+export interface IDepartments {
+  // bgImage: StaticImageData;
+  title: string
+}
+
+export const departments: IDepartments[] = [
+  {
+    // bgImage: two,
+    title: "Public Administration",
+  },
+  {
+    title: "Accounting",
+    // bgImage: three,
+  },
+  {
+    title: "Business Administration & Management",
+    // bgImage: four,
+  },
+  {
+    // bgImage: five,
+    title: "Mass Communication",
+  },
+  {
+    // bgImage: six,
+    title: "Computer Science & Engineering",
+  },
+  {
+    // bgImage: seven,
+    title: "Marketing",
+  },
+  {
+    // bgImage: nine,
+    title: "Banking & Finance",
+  },
+  {
+    // bgImage: ten,
+    title: "Mathematics & Statistics",
+  },
+  {
+    // bgImage: twelve,
+    title: "Education",
+  },
+]
+
+// ---------- testimonial -----------
+
+export interface ITestimonial {
+  name: string
+  testimony: string
+  state?: string
+  department?: string
+}
+
+export const testimonials: ITestimonial[] = [
+  {
+    name: "Nike Adekoga",
+    testimony:
+      "your support service was amazing. I was able to write my project from chapter one to five, Courtesy of your support! Tabhor Project Rocks!!!.",
+    state: "Osogbo, Osun State",
+    department: "Family Planning Education.",
+  },
+  {
+    name: "Nike Adekoga",
+    testimony:
+      "your support service was amazing. I was able to write my project from chapter one to five, Courtesy of your support! Tabhor Project Rocks!!!.",
+    state: "Osogbo, Osun State",
+    department: "Family Planning Education.",
+  },
+  {
+    name: "Nike Adekoga",
+    testimony:
+      "your support service was amazing. I was able to write my project from chapter one to five, Courtesy of your support! Tabhor Project Rocks!!!.",
+    state: "Osogbo, Osun State",
+    department: "Family Planning Education.",
+  },
+  {
+    name: "Nike Adekoga",
+    testimony:
+      "your support service was amazing. I was able to write my project from chapter one to five, Courtesy of your support! Tabhor Project Rocks!!!.",
+    state: "Osogbo, Osun State",
+    department: "Family Planning Education.",
+  },
+]

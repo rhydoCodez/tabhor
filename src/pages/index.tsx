@@ -1,10 +1,14 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import HeroSection from "../components/HeroSection";
-import HowItWorks from "../components/HowItWorks";
-import CheckOut from "../components/utilities/CheckOut";
+import type { NextPage } from "next"
+import Head from "next/head"
+import {
+  Header,
+  HeroSection,
+  HowItWorks,
+  Footer,
+  Departments,
+  Testimonials,
+} from "../components"
+import { CheckOut, HowCard, WhatsappWidget } from "../components/utilities"
 
 const Home: NextPage = () => {
   return (
@@ -15,15 +19,19 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="relative">
         <Header />
         <HeroSection />
         <HowItWorks />
-        <CheckOut />
+        <Departments />
+        {/* carousel */}
+        <Testimonials />
+        {/* <CheckOut /> */}
+        <WhatsappWidget />
         <Footer />
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

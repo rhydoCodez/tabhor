@@ -1,5 +1,14 @@
-import { createStore } from "easy-peasy";
+import { action, createStore } from "easy-peasy";
 
-const store = createStore({})
+const store = createStore({
+  projectMaterials: 0,
+  members: 0,
+  downloads: 0,
+  writers: 0,
 
-export default store
+  addProjectMaterial: action((state, payload) => {
+    //   state
+  }),
+});
+
+export default store;
